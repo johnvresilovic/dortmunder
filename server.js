@@ -50,16 +50,16 @@ app.get("/dortmunder/new", (req, res) => {
   })
 
 //Delete
-app.delete('/dortmunders/:id', (req, res)=>{
+app.delete('/dortmunder/:id', (req, res)=>{
   dortmunder.findByIdAndRemove(req.params.id, (err, data)=>{
-      res.redirect('/dortmunders')//redirect back to fruits index
+      res.redirect('/dortmunder')//redirect back to fruits index
   })
 })
 
 //Update
-app.put('/dortmunders/:id', (req, res)=>{
+app.put('/dortmunder/:id', (req, res)=>{
   dortmunder.findByIdAndUpdate(req.params.id, req.body, (err, updatedDortmunder)=>{
-      res.redirect(`/dortmunders/${req.params.id}`)
+      res.redirect(`/dortmunder/${req.params.id}`)
   })
 })
 
@@ -69,22 +69,10 @@ app.post("/dortmunder", (req, res) => {
       res.redirect("/dortmunder")
     })
   })
-  //Seed route
-  app.get('/dortmunders/seed', (req, res)=>{
-    dortmunder.create([
-        {
-            name:"What's the Worst That Could Happen?",
-            year:1996,
-            synopsis:"Dortmunder seeks revenge against the billionaire who robbed him."
-        },
-    ], (err, data)=>{
-        res.redirect('/dortmunders')
-    })
-})
 
 //Edit
-app.get('/dortmunders/:id/edit', (req, res)=>{
-  dortmunder.findById(req.params.id, (err, foundFruit)=>{ //find the fruit
+app.get('/dortmunder/:id/edit', (req, res)=>{
+  dortmunder.findById(req.params.id, (err, foundDortmunder)=>{ //find the fruit
     if(!err){
       res.render(
         'Edit',

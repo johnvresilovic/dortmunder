@@ -10,8 +10,8 @@ class Index extends React.Component {
             return (
               <li>
                 <a href={`/dortmunder/${dortmunder.id}`}>{dortmunder.title}</a>{" "}<br />
-                <a href={`/dortmunders/${dortmunder._id}/edit`}>Edit</a><br />
-                <form action={`/dortmunders/${dortmunder._id}?_method=DELETE`} method="POST">
+                <a href={`/dortmunder/${dortmunder._id}/edit`}>Edit</a><br />
+                <form action={`/dortmunder/${dortmunder._id}?_method=DELETE`} method="POST">
                           <input type="submit" value="DELETE"/>
                       </form>
                       <br />
