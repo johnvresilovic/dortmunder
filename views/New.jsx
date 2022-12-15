@@ -7,8 +7,9 @@ class New extends React.Component {
         <h2>Add a Dortmunder title</h2>
         <form action='/dortmunder' method='POST'>
           Title: <input type='text' name='title' />
-          Year: <input type='number' name='year' />
-          Synopsis: <input type='text'name='synopsis' />
+          Image URL: <input type='text' name='image' />
+          Price: <input type='text'name='price' />
+          Quantity: <input type='number'name='quantity' />
           <input type='submit' name='' value='Submit' />
         </form>
       </div>

@@ -9,8 +9,9 @@ class Edit extends React.Component{
           {/* form is not complete we will do that below*/}
       <form action={`/dortmunder/${this.props.dortmunder._id}?_method=PUT`} method="POST">
           Title: <input type="text" name="title" defaultValue={this.props.dortmunder.title}/><br/>
-          Year: <input type="number" name="year"  defaultValue={this.props.dortmunder.year}/><br/>
-          Synopsis: <input type="text" name="synopsis"  defaultValue={this.props.dortmunder.synopsis}/><br/>
+          Image: <input type="text" name="image"  defaultValue={this.props.dortmunder.image}/><br/>
+          Price: <input type="text" name="price"  defaultValue={this.props.dortmunder.price}/><br/>
+          Quantity: <input type="number" name="quantity"  defaultValue={this.props.dortmunder.quantity}/><br/>
           <input type="submit" value="Submit Changes"/>
       </form>
       </DefaultLayout>

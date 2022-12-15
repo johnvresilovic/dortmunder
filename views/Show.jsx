@@ -4,8 +4,9 @@ class Show extends React.Component {
     return (
       <div>
         <h1>{this.props.dortmunder.title}</h1>
-        <h2>{this.props.dortmunder.year}</h2>
-        <h4>{this.props.dortmunder.synopsis}</h4>
+        <img src={this.props.dortmunder.image}></img>
+        <h2>{this.props.dortmunder.price}</h2>
+        <h2>Number in stock: {this.props.dortmunder.quantity}</h2>
         <nav>
           <a href="/dortmunder">See the whole series</a>
         </nav>
