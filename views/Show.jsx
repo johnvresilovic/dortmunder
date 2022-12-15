@@ -15,7 +15,7 @@ class Show extends React.Component {
           this.props.dortmunder.quantity === 0
           ? <h3>We will restock ASAP!</h3>
           : <form action={`/dortmunder/${this.props.dortmunder._id}?_method=PUT`} method="POST">
-            <input type="submit" value="BUY THIS BOOK"/>
+            <input type="submit" name="quantity" value="BUY THIS BOOK" />
             </form>
         }
         <hr></hr>    

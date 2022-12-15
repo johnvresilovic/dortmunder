@@ -9,7 +9,7 @@ const methodOverride = require('method-override')
 
 //Middleware
 app.use((req, res, next) => {
-  console.log("I run for the ice cream truck.  I do not run for the bus.")
+  console.log("I run for Iran...")
   next()
 })
 app.use(express.urlencoded({ extended: false }))
@@ -26,7 +26,7 @@ const db = mongoose.connection
 mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
 mongoose.set('strictQuery', true)
 mongoose.connection.once("open", () => {
-  console.log("connected to mongo")
+  console.log("bongo mongo")
 })
 
 //Root
@@ -52,15 +52,27 @@ app.get("/dortmunder/new", (req, res) => {
 //Delete
 app.delete('/dortmunder/:id', (req, res)=>{
   dortmunder.findByIdAndRemove(req.params.id, (err, data)=>{
-      res.redirect('/dortmunder')//redirect back to fruits index
+      res.redirect('/dortmunder')
   })
 })
 
 //Update
-app.put('/dortmunder/:id', (req, res)=>{
-  dortmunder.findByIdAndUpdate(req.params.id, req.body, (err, updatedDortmunder)=>{
-      res.redirect(`/dortmunder/${req.params.id}`)
-  })
+// app.put('/dortmunder/:id', (req, res)=>{
+//   dortmunder.findByIdAndUpdate(req.params.id, req.body, (err, updatedDortmunder)=>{
+//       res.redirect(`/dortmunder/${req.params.id}`)
+//   })
+// })
+
+app.put("/dortmunder/:bookId", (req, res) => {
+  if (req.body.quantity === "BUY THIS BOOK") {
+     dortmunder.findByIdAndUpdate(req.params.bookId, { $inc: { "quantity": -1 } }, (err, updatedDortmunder) => {
+        res.redirect(`/dortmunder/${req.params.bookId}`)
+     })
+  } else {
+     dortmunder.findByIdAndUpdate(req.params.bookId, req.body, (err, updatedDortmunder) => {
+        res.redirect(`/dortmunder/${req.params.bookId}`)
+     })
+  }
 })
 
 //Create (or Add)
@@ -72,12 +84,12 @@ app.post("/dortmunder", (req, res) => {
 
 //Edit
 app.get('/dortmunder/:id/edit', (req, res)=>{
-  dortmunder.findById(req.params.id, (err, foundDortmunder)=>{ //find the fruit
+  dortmunder.findById(req.params.id, (err, foundDortmunder)=>{
     if(!err){
       res.render(
         'Edit',
       {
-        dortmunder: foundDortmunder //pass in the found fruit so we can prefill the form
+        dortmunder: foundDortmunder
       }
     )
   } else {
@@ -85,6 +97,9 @@ app.get('/dortmunder/:id/edit', (req, res)=>{
   }
   })
 })
+
+
+
 
 //Show
 app.get("/dortmunder/:bookId", function (req, res) {
