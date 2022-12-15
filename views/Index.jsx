@@ -4,11 +4,8 @@ class Index extends React.Component {
   render() {
     return (
       <DefaultLayout title={'The Dortmunder Store'}>
-        <h2>The Best Place to Buy Brilliant Comic Novels by Donald E. Westlake</h2>
-        <h4>New York City resident John Dortmunder is a simple man.</h4>
-        <h4>All he wants is to live quietly off the proceeds of his criminal endeavors.</h4>
-        <h4>Somehow, though, this small-time thief has a knack for getting into big-time trouble.</h4>
-        <h4>Dortmunder's schemes to save his skin are ingenious and hilarious!</h4>
+        <h2>Your One-Stop Shop for Brilliant Comic Novels by Donald E. Westlake</h2>
+        <h4>New York City resident John Dortmunder is a simple man.  All he wants is to live quietly off the proceeds of his petty thievery.  Somehow, though, this small-time crook has a knack for getting into big-time trouble.  Dortmunder's schemes for saving his skin are ingenious and hilarious!</h4>
         <ul>
           {this.props.dortmunder.map((dortmunder, i) => {
             return (
