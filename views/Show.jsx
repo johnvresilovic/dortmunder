@@ -18,7 +18,6 @@ class Show extends React.Component {
             <input type="submit" value="BUY THIS BOOK"/>
             </form>
         }
-        
         <hr></hr>    
         <a href={`/dortmunder/${this.props.dortmunder._id}/edit`}>Edit</a><br />
         <hr></hr>
