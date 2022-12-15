@@ -31,7 +31,7 @@ mongoose.connection.once("open", () => {
 
 //Root
 app.get('/', (req, res) => {
-    res.send(`<h1>"I believe my subject is bewilderment.  But I could be wrong."</h1>`)
+    res.send(`<h1>"I believe my subject is bewilderment.  But I could be wrong."</h1><h2>--Donald E. Westlake, 1933-2008</h2><img src='https://upload.wikimedia.org/wikipedia/commons/0/04/Donald_Westlake_LOC.jpg'></img>`)
     
 })
 
