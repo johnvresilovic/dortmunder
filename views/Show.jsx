@@ -9,7 +9,7 @@ class Show extends React.Component {
         {
           this.props.dortmunder.quantity === 0
           ? <h2>OUT OF STOCK</h2>
-          : <h2>Number in stock: {this.props.dortmunder.quantity}</h2>
+          : <h2>Copies available: {this.props.dortmunder.quantity}</h2>
         }
         {
           this.props.dortmunder.quantity === 0

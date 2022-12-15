@@ -18,8 +18,10 @@ class Index extends React.Component {
                 <form action={`/dortmunder/${dortmunder._id}?_method=DELETE`} method="POST">
                           <input type="submit" value="DELETE"/>
                       </form>
+                      <br />
                       <hr></hr>
-                      <hr></hr>   
+                      <hr></hr>
+                      <br />   
               </li>
               
             )
