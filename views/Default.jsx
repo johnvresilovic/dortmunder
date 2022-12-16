@@ -1,7 +1,7 @@
-const React = require('react');
+const React = require('react')
 const pageStyle = {
   backgroundColor:'palegoldenrod',
-  fontFamily:'Segoe UI'
+  fontFamily:'Segoe UI',
 }
 class DefaultLayout extends React.Component {
   render() {
@@ -13,8 +13,7 @@ class DefaultLayout extends React.Component {
         {this.props.children}
         </body>
       </html>
-    );
+    )
   }
 }
-
 module.exports = DefaultLayout
