@@ -57,12 +57,6 @@ app.delete('/dortmunder/:id', (req, res)=>{
 })
 
 //Update
-// app.put('/dortmunder/:id', (req, res)=>{
-//   dortmunder.findByIdAndUpdate(req.params.id, req.body, (err, updatedDortmunder)=>{
-//       res.redirect(`/dortmunder/${req.params.id}`)
-//   })
-// })
-
 app.put("/dortmunder/:bookId", (req, res) => {
   if (req.body.quantity === "BUY THIS BOOK") {
      dortmunder.findByIdAndUpdate(req.params.bookId, { $inc: { "quantity": -1 } }, (err, updatedDortmunder) => {
@@ -97,9 +91,6 @@ app.get('/dortmunder/:id/edit', (req, res)=>{
   }
   })
 })
-
-
-
 
 //Show
 app.get("/dortmunder/:bookId", function (req, res) {
