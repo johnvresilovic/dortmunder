@@ -14,6 +14,7 @@ app.use((req, res, next) => {
 })
 app.use(express.urlencoded({ extended: false }))
 app.use(methodOverride('_method'))
+app.use(express.static(__dirname + '/public'))
 
 //Views
 app.set('views', './views')
@@ -31,7 +32,7 @@ mongoose.connection.once("open", () => {
 
 //Root
 app.get('/', (req, res) => {
-    res.send(`<body style='background-color:palegoldenrod'><h1 style='font-family:Segoe UI'>"I believe my subject is bewilderment.  But I could be wrong."</h1><h2 style='font-family:Segoe UI'>--Donald E. Westlake, 1933-2008</h2><nav><a href="/dortmunder" style='font-family:Segoe UI'>Enter the Dortmunder Store</a><br /><br /></nav><img src='https://upload.wikimedia.org/wikipedia/commons/0/04/Donald_Westlake_LOC.jpg'></img></body>`)
+    res.send(`<body style='background-color:lemonchiffon'><h1 style='font-family:Segoe UI'>"I believe my subject is bewilderment.  But I could be wrong."</h1><h2 style='font-family:Segoe UI'>--Donald E. Westlake, 1933-2008</h2><nav><a href="/dortmunder" style='font-family:Segoe UI'>Enter the Dortmunder Store</a><br /><br /></nav><img src='./westlake80.png'></img></body>`)
     
 })
 
