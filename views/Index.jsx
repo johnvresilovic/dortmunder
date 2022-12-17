@@ -10,13 +10,12 @@ class Index extends React.Component {
           {this.props.dortmunder.map((dortmunder, i) => {
             return (
               <div className='catalog'>
-                <a href={`/dortmunder/${dortmunder.id}`}>{dortmunder.title}</a>{" "}<br />
-                <a href={`/dortmunder/${dortmunder.id}`}><img src={dortmunder.image}></img></a><br />
-                <a href={`/dortmunder/${dortmunder._id}/edit`}>Edit</a><br />
-                <form action={`/dortmunder/${dortmunder._id}?_method=DELETE`} method="POST">
-                          <input type="submit" value="DELETE"/>
-                      </form>
-                      <br />   
+                <div><a href={`/dortmunder/${dortmunder.id}`}>{dortmunder.title}</a>{" "}<br /></div>
+                <div><a href={`/dortmunder/${dortmunder.id}`}><img src={dortmunder.image}></img></a><br /></div>
+                <div><a href={`/dortmunder/${dortmunder._id}/edit`}>Edit</a><br /></div>
+                <div><form action={`/dortmunder/${dortmunder._id}?_method=DELETE`} method="POST">
+                  <input type="submit" value="DELETE"/>
+                  </form><br /></div>   
               </div>
             )
           })}
@@ -25,7 +24,14 @@ class Index extends React.Component {
           <a href="/dortmunder/new">Add to the list</a>
         </nav>
         <br />
+        <nav>
         <a href="#top">Back to top</a>
+        </nav>
+        <br />
+        <nav>
+          <a href="/">Back to author page</a>
+        </nav>
+        
       </DefaultLayout>
     )
   }
