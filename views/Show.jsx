@@ -18,14 +18,19 @@ class Show extends React.Component {
           : <form action={`/dortmunder/${this.props.dortmunder._id}?_method=PUT`} method="POST">
             <input type="submit" name="quantity" value="BUY THIS BOOK" />
             </form>
-        }
-        <hr></hr>    
-        <a href={`/dortmunder/${this.props.dortmunder._id}/edit`}>Edit</a><br />
-        <hr></hr>
+        }    
+        <br /><a href={`/dortmunder/${this.props.dortmunder._id}/edit`}>Edit</a><br /><br />
         <form action={`/dortmunder/${this.props.dortmunder._id}?_method=DELETE`} method="POST">
         <input type="submit" value="Delete"/>
         </form>
+        <br />
         <hr></hr>
+        <hr></hr>
+        <div className="footer">
+        <nav>
+          <a href="/dortmunder/new">Add a title</a>
+        </nav>
+        <br />
         <nav>
           <a href="/dortmunder">Back to catalog</a>
         </nav>
@@ -33,6 +38,7 @@ class Show extends React.Component {
         <nav>
           <a href="/">Back to author page</a>
         </nav>
+        </div>
       </DefaultLayout>
     )
   }

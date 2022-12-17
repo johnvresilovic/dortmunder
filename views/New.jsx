@@ -3,23 +3,27 @@ const DefaultLayout = require('./Default.jsx')
 class New extends React.Component {
   render() {
     return (
-      <DefaultLayout title={'Add a Dortmunder Title'}>
+      <DefaultLayout title={'Add a Title'}>
         <form action='/dortmunder' method='POST'>
-          Title: <input type='text' name='title' />
-          Image URL: <input type='text' name='image' />
-          Synopsis: <input type='text' name='synopsis' />
-          Price: <input type='text'name='price' />
-          Quantity: <input type='number'name='quantity' />
+          Title: <input type='text' name='title' /><br /><br />
+          Image URL: <input type='text' name='image' /><br /><br />
+          Synopsis: <input type='text' name='synopsis' /><br /><br />
+          Price: <input type='text'name='price' /><br /><br />
+          Quantity: <input type='number'name='quantity' /><br /><br />
           <input type='submit' name='' value='Submit' />
         </form>
         <br />
-      <nav>
+        <hr></hr>
+        <hr></hr>
+        <div className="footer">
+        <nav>
           <a href="/dortmunder">Back to catalog</a>
         </nav>
-      <br />
+        <br />
         <nav>
           <a href="/">Back to author page</a>
         </nav>
+        </div>
       </DefaultLayout>
     )
   }
