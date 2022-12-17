@@ -18,8 +18,8 @@ class Index extends React.Component {
             return (
                 <div className='book-container'>
                 <a href={`/dortmunder/${dortmunder.id}`}>{dortmunder.title}</a>{" "}<br /><br />
-                <a href={`/dortmunder/${dortmunder.id}`}><img src={dortmunder.image}></img></a><br />
-                <p>{dortmunder.synopsis}</p>
+                <a href={`/dortmunder/${dortmunder.id}`}><img src={dortmunder.image}></img></a><br /><br />
+                <p>{dortmunder.synopsis}</p><br />
                 <a href={`/dortmunder/${dortmunder._id}/edit`}>Edit</a><br /><br />
                 <form action={`/dortmunder/${dortmunder._id}?_method=DELETE`} method="POST">
                   <input type="submit" value="DELETE"/>
