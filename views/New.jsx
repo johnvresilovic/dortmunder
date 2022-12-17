@@ -7,6 +7,7 @@ class New extends React.Component {
         <form action='/dortmunder' method='POST'>
           Title: <input type='text' name='title' />
           Image URL: <input type='text' name='image' />
+          Synopsis: <input type='text' name='synopsis' />
           Price: <input type='text'name='price' />
           Quantity: <input type='number'name='quantity' />
           <input type='submit' name='' value='Submit' />

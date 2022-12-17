@@ -10,8 +10,9 @@ class Index extends React.Component {
           {this.props.dortmunder.map((dortmunder, i) => {
             return (
                 <div>
-                  <a href={`/dortmunder/${dortmunder.id}`}>{dortmunder.title}</a>{" "}<br />
+                <a href={`/dortmunder/${dortmunder.id}`}>{dortmunder.title}</a>{" "}<br />
                 <a href={`/dortmunder/${dortmunder.id}`}><img src={dortmunder.image}></img></a><br />
+                <p>{dortmunder.synopsis}</p><br />
                 <a href={`/dortmunder/${dortmunder._id}/edit`}>Edit</a><br />
                 <form action={`/dortmunder/${dortmunder._id}?_method=DELETE`} method="POST">
                   <input type="submit" value="DELETE"/>

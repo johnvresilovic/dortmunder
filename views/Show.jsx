@@ -5,6 +5,7 @@ class Show extends React.Component {
     return (
       <DefaultLayout title={this.props.dortmunder.title}>
         <img src={this.props.dortmunder.image}></img>
+        <h3>{this.props.dortmunder.synopsis}</h3>
         <h2>{this.props.dortmunder.price}</h2>
         {
           this.props.dortmunder.quantity === 0
@@ -13,7 +14,7 @@ class Show extends React.Component {
         }
         {
           this.props.dortmunder.quantity === 0
-          ? <h3>We will restock ASAP!</h3>
+          ? <h3>More copies coming soon!</h3>
           : <form action={`/dortmunder/${this.props.dortmunder._id}?_method=PUT`} method="POST">
             <input type="submit" name="quantity" value="BUY THIS BOOK" />
             </form>
