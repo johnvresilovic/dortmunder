@@ -8,19 +8,12 @@
     cursor: pointer;
 }
 
-.list {
-    list-style-type: none;
-}
-
 .catalog {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-wrap: wrap;
+    display:grid;
 }
 
 .home {
-    justify-content: center;
+    align-content: center;
     background-color: lemonchiffon;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
