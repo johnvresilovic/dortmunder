@@ -11,6 +11,14 @@ class New extends React.Component {
           Quantity: <input type='number'name='quantity' />
           <input type='submit' name='' value='Submit' />
         </form>
+        <br />
+      <nav>
+          <a href="/dortmunder">Back to catalog</a>
+        </nav>
+      <br />
+        <nav>
+          <a href="/">Back to author page</a>
+        </nav>
       </DefaultLayout>
     )
   }

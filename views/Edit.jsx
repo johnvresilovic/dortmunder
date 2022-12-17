@@ -12,6 +12,14 @@ class Edit extends React.Component{
           Quantity: <input type="number" name="quantity"  defaultValue={this.props.dortmunder.quantity }/><br/>
           <input type="submit" value="Submit Changes"/>
       </form>
+      <br />
+      <nav>
+          <a href="/dortmunder">Back to catalog</a>
+        </nav>
+      <br />
+        <nav>
+          <a href="/">Back to author page</a>
+        </nav>
       </DefaultLayout>
     )
   }

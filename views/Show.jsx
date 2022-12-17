@@ -26,7 +26,11 @@ class Show extends React.Component {
         </form>
         <hr></hr>
         <nav>
-          <a href="/dortmunder">See the whole series</a>
+          <a href="/dortmunder">Back to catalog</a>
+        </nav>
+        <br />
+        <nav>
+          <a href="/">Back to author page</a>
         </nav>
       </DefaultLayout>
     )
