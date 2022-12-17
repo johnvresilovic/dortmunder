@@ -9,7 +9,7 @@
 }
 
 .list {
-    list-style: none;
+    list-style-type: none;
 }
 
 .catalog {
@@ -19,6 +19,8 @@
     flex-wrap: wrap;
 }
 
-h1 {
-    color: blue;
+.home {
+    justify-content: center;
+    background-color: lemonchiffon;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
