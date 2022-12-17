@@ -1,6 +1,6 @@
 const React = require('react')
 const pageStyle = {
-  backgroundColor:'lemonchiffon',
+  backgroundColor:'snow',
   fontFamily:'Segoe UI',
 }
 class DefaultLayout extends React.Component {

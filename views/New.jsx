@@ -5,9 +5,9 @@ class New extends React.Component {
     return (
       <DefaultLayout title={'Add a Title'}>
         <form action='/dortmunder' method='POST'>
-          Title: <input type='text' name='title' /><br /><br />
-          Image URL: <input type='text' name='image' /><br /><br />
-          Synopsis: <input type='text' name='synopsis' /><br /><br />
+          Title: <input type='text' name='title' size='30'/><br /><br />
+          Image URL: <input type='text' name='image' size='60'/><br /><br />
+          Synopsis: <input type='text' name='synopsis' size='100'/><br /><br />
           Price: <input type='text'name='price' /><br /><br />
           Quantity: <input type='number'name='quantity' /><br /><br />
           <input type='submit' name='' value='Submit' />

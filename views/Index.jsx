@@ -7,6 +7,10 @@ class Index extends React.Component {
         <a name="top"></a>
         <h2>Your One-Stop Shop for Brilliant Comic Novels About a Very Unlucky Thief</h2>
         <h4>New York City resident John Dortmunder is a simple man.  All he wants is to live quietly off the proceeds of his crimes.  Somehow, though, this small-time crook has a knack for getting into big-time trouble.  Dortmunder's schemes for saving his skin are ingenious and hilarious!</h4>
+        <nav>
+          <a href="/dortmunder/new">Add a title</a>
+        </nav>
+        <br />
         <hr></hr>
         <hr></hr>
         <br />

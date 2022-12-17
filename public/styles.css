@@ -1,13 +1,18 @@
-/* .book-container {
-    display: flex;
-    justify-content:space-evenly;
-    height: 35vh;
-    width: 70vw;
-    margin: 0 auto;
-  } */
+.author-photo {
+  display: flex;
+}
 
-  /* .footer {
-    display: flex;
-    justify-content: space-evenly;
-  } */
+.author-bio {
+  display: flex;
+  font-size: 22px;
+  padding-left: 20px;
+  max-width: 600px;
+}
 
+.container {
+  display: flex;
+}
+
+p {
+  margin: 0;
+}

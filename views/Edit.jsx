@@ -6,9 +6,9 @@ class Edit extends React.Component{
     return (
       <DefaultLayout title="Edit">      
       <form action={`/dortmunder/${this.props.dortmunder._id}?_method=PUT`} method="POST">
-          Title: <input type="text" name="title" defaultValue={this.props.dortmunder.title}/><br /><br />
-          Image URL: <input type="text" name="image"  defaultValue={this.props.dortmunder.image}/><br /><br />
-          Synopsis: <input type="text" name="synopsis" defaultValue={this.props.dortmunder.synopsis}/><br /><br />
+          Title: <input type="text" name="title" size='30' defaultValue={this.props.dortmunder.title}/><br /><br />
+          Image URL: <input type="text" name="image" size='60' defaultValue={this.props.dortmunder.image}/><br /><br />
+          Synopsis: <input type="text" name="synopsis" size='100' defaultValue={this.props.dortmunder.synopsis}/><br /><br />
           Price: <input type="text" name="price"  defaultValue={this.props.dortmunder.price}/><br/><br />
           Quantity: <input type="number" name="quantity"  defaultValue={this.props.dortmunder.quantity }/><br /><br />
           <input type="submit" value="Submit Changes"/>
