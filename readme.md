@@ -18,9 +18,9 @@ The store was created to meet the requirements of a project assignment in a Per 
 
 Donald Westlake published more than 100 books during a career that spanned five decades and multiple genres.  He is probably best known for the Parker series, hardboiled crime novels written under the pseudonym Richard Stark.  I've read Westlake's work widely but I will always come back to the Dortmunder series, comedic capers full of slapstick, wordplay, satire and clever plotting.  The best three, in my opinion, are Drowned Hopes, Don't Ask and (especially) What's the Worst That Could Happen?  (Read them in that order.)  I also strongly recommend The Hot Rock, Bank Shot, Nobody's Perfect and Why Me?  
 
-This bookstore project is the culmination of our class's second module, which focused on Express, React and MongoDB.  I built the server.js file using class examples of CRUD applications.  The only difficulty I encountered was getting the Update route to work.  The route was slightly more complicated than the ones I'd created earlier due to the need to decrement the inventory of a given book every time the user clicks a Buy button.  Thanks to Kasper Kain and Cody Smith for their help with that.
+This bookstore project is the culmination of our class's second module, which focused on Express, React and MongoDB.  I built the server.js file using class examples of CRUD applications.  The only difficulty I encountered was getting the Update route to work.  The route was slightly more complicated than the ones I'd created earlier due to the need to decrement the inventory of a given book every time the user clicks a Buy button.
 
-The project uses a relatively simple data structure that stores the book's title, a URL for the cover image, the book's price and the number of copies on hand.  A future iteration might include publication information, a synopsis and reviews.
+The project uses a relatively simple data structure that stores the book's title, a URL for the cover image, the book's price and the number of copies on hand.  A future iteration might include publication information and reviews.
 
 [getting the look right]
 
