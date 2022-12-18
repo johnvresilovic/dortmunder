@@ -26,7 +26,7 @@ class Show extends React.Component {
         <br />
         <hr></hr>
         <hr></hr>
-        <div className="footer">
+        <div>
         <nav>
           <a href="/dortmunder/new">Add a title</a>
         </nav>

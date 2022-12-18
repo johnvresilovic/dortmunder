@@ -6,7 +6,11 @@ class Index extends React.Component {
       <DefaultLayout title={'The Dortmunder Store'}>
         <a name="top"></a>
         <h2>Your One-Stop Shop for Brilliant Comic Novels About a Very Unlucky Thief</h2>
-        <h4>New York City resident John Dortmunder is a simple man.  All he wants is to live quietly off the proceeds of his crimes.  Somehow, though, this small-time crook has a knack for getting into big-time trouble.  Dortmunder's schemes for saving his skin are ingenious and hilarious!</h4>
+        <p className="dortmunder-bio">New York City resident John Dortmunder is a simple man.</p>  
+        <p className="dortmunder-bio">All he wants is to live quietly off the proceeds of his crimes.</p>  
+        <p className="dortmunder-bio">But this small-time crook has a knack for getting into big-time trouble.</p>  
+        <p className="dortmunder-bio">Dortmunder's schemes for saving his skin are ingenious and hilarious!</p>
+        <br />
         <nav>
           <a href="/dortmunder/new">Add a title</a>
         </nav>
@@ -16,22 +20,19 @@ class Index extends React.Component {
         <br />
           {this.props.dortmunder.map((dortmunder, i) => {
             return (
+                <div className='catalog-container'>
                 <div className='book-container'>
-                <a href={`/dortmunder/${dortmunder.id}`}>{dortmunder.title}</a>{" "}<br /><br />
-                <a href={`/dortmunder/${dortmunder.id}`}><img src={dortmunder.image}></img></a><br /><br />
-                <p>{dortmunder.synopsis}</p><br />
-                <a href={`/dortmunder/${dortmunder._id}/edit`}>Edit</a><br /><br />
-                <form action={`/dortmunder/${dortmunder._id}?_method=DELETE`} method="POST">
-                  <input type="submit" value="DELETE"/>
-                  </form><br />
-                  <hr></hr>   
+                <div className='image-container'><a href={`/dortmunder/${dortmunder.id}`}><img src={dortmunder.image}></img></a><br /><br /></div>
+                <div className='text-container'><a href={`/dortmunder/${dortmunder.id}`}>{dortmunder.title}</a>{" "}<br /><br />
+                <p>{dortmunder.synopsis}</p><br /></div>  
+              </div>
               </div>
             )
           })}
         <br />
         <hr></hr>
         <hr></hr>
-        <div className="footer">
+        <div>  
         <nav>
           <a href="/dortmunder/new">Add a title</a>
         </nav>

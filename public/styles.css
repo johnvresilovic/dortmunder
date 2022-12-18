@@ -13,6 +13,31 @@
   display: flex;
 }
 
+.catalog-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.book-container {
+  display: flex;
+  max-width: 300px;
+}
+
+
+/* .image-container {
+  display: flex;
+} */
+
+.text-container {
+  /* display: flex; */
+  padding-left: 10px;
+  min-width: 150px;
+}
+
 p {
   margin: 0;
+}
+
+.dortmunder-bio {
+  font-size: 20px;
 }
