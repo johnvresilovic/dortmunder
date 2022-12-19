@@ -25,7 +25,9 @@ The project uses a relatively simple data structure that stores the book's title
 The bulk of my time on this project was spent on its look.  Front-end development awakens the long-dormant perfectionist in me.  I don't know if that's a good thing or a bad one.  (It's probably a little of both.)  The look I chose is relatively minimalist but getting it right took a whole lot of trial and error.  It would be a great challenge, I think (great as in difficult but also great as in interesting), to attempt a maximalist look for the Dortmunder Store; to make it look something like what that little operation from Seattle serves up.        
 
 ## Miscellaneous
-To visit the store, navigate to the URL below.  If you want access to the files you can fork and clone this repository to your machine.  You can also watch a video about the making of this project at [video link, do you need exclamation mark in front of brackets?].
+To visit the store, navigate to the URL below.  If you want access to the files you can fork and clone this repository to your machine.  You can also watch a video about the making of this project at: 
+
+![video](./video.mp4)
 
 The live site for the store is https://johnvresilovic.github.io/dortmunder
 
