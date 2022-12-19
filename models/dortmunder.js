@@ -6,8 +6,8 @@ const dortmunderSchema = new mongoose.Schema({
   synopsis: { type: String, required: true },
   price: { type: String, required: true },
   quantity: { type: Number, required: true },
-})
+});
 
-const dortmunder = mongoose.model("Dortmunder", dortmunderSchema)
+const dortmunder = mongoose.model("Dortmunder", dortmunderSchema);
 
-module.exports = dortmunder
+module.exports = dortmunder;
