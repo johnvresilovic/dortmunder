@@ -29,9 +29,7 @@ The bulk of my time on this project was spent on its look.  Front-end developmen
 ## Miscellaneous
 To access these project files you can fork and clone the repository to your machine.  The repo link for the store is https://github.com/johnvresilovic/dortmunder.git 
 
-You can also watch a video about the making of this project at: 
-
-![video](./video.mp4)
+You can also watch a video about the making of this project at https://youtu.be/rOxok7o1Ad0 
 
 Acknowledgement to powells.com and wikimedia.org for the images used in the project, and to Wikipedia for biographical information about Donald Westlake.  Thanks to my instructors, Tishana Trainor, Kasper Kain and Chase Van Halen, as well as my classmates, in particular Hadia Shafique and Cody Smith, who supplied useful bits of code at critical junctures.
 
